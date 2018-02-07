@@ -4,7 +4,7 @@ class project ooad
 Installation steps:
 ------------------
 
-1) Install eclipse neon
+1) Install eclipse neon3
 
 2) Install Maven
 
