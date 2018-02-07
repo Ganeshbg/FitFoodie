@@ -4,7 +4,7 @@ class project ooad
 Installation steps:
 ------------------
 
-1) Install eclipse neon3
+1) Install eclipse neon3 (http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/3/eclipse-jee-neon-3-macosx-cocoa-x86_64.tar.gz)
 
 2) Install Maven
 
