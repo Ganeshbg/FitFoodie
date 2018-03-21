@@ -6,10 +6,13 @@ The system is developed as a part of the semester long project for CSCI 5448 - O
 Installation steps:
 ------------------
 
-1) Install eclipse neon3 (http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/3/eclipse-jee-neon-3-macosx-cocoa-x86_64.tar.gz)
+We have used Python Django for this project. Django is an MVC architecture framework for python. We are using Django version 1.11.10
 
-2) Install Maven
+Commands :
+==========
 
-3) Install mysql and mysqlworkspace (https://dev.mysql.com/downloads/mysql/, https://dev.mysql.com/downloads/workbench/)
+1) Start a project: django-admin startproject PROJECT_NAME
 
-4) Install Spring framework (we did this using pom.xml where it had dependencies and it installed everything automatically)
+2) Start an app: python manage.py startapp APP_NAME - Should be inside the PROJECT_NAME folder which was created when we run the 1st command.
+
+3) Start Django server: python manage.py runserver - Should be inside the PROJECT_NAME folder which was created when we run the 1st command.
