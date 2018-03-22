@@ -1,4 +1,6 @@
 
-public class DietType {
+public enum DietType {
 
+	VEGETARIAN, VEGAN, PALEO, UNRESTRICTED;
+	
 }

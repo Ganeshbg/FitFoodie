@@ -1,4 +1,4 @@
 
-public class Nutrient {
+public abstract class Nutrient {
 
 }
