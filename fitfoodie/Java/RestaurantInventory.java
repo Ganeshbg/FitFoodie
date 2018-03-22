@@ -1,5 +1,5 @@
 
-public class RestaurantInventory implements SearchInterface, SearchByProfileInterface {
+public class RestaurantInventory implements Searchable, SearchableByProfile {
 	private Restaurant[] restaurants;
 	public int addRestaurant(String name, String street, int zip,String city, String state, double rating){
 			return -1; // Return some integer for now
