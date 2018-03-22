@@ -1,5 +1,5 @@
 
-public interface SearchInterface {
+public interface Searchable {
 	public Restaurant[] searchMealByLocation(Location address);
 	public Restaurant[] searchMealByCuisine(Cuisine cuisine);
 	public Restaurant[] searchMealByRadius(int radius);
