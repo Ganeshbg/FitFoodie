@@ -1,5 +1,5 @@
 
-public class Customer extends RegisteredUser implements SearchByProfileInterface{
+public class Customer extends RegisteredUser implements SearchableByProfile{
 	
 	private CustomerProfile profile;
 	private ShoppingCart cart;
