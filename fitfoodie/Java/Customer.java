@@ -1,5 +1,5 @@
 
-public class Customer extends RegisteredUser{
+public class Customer extends RegisteredUser implements SearchByProfileInterface{
 	
 	private CustomerProfile profile;
 	private ShoppingCart cart;
@@ -16,6 +16,11 @@ public class Customer extends RegisteredUser{
 	}
 	public void setCart(ShoppingCart cart) {
 		this.cart = cart;
+	}
+	
+	public Restaurant [] searchMealOnProfile(Profile p){
+		
+		return null;
 	}
 
 }
