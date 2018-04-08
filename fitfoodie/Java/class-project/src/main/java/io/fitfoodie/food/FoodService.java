@@ -58,12 +58,12 @@ public class FoodService {
 //					if (f.nutrients.get(j) instanceof Protein) {
 //						Protein p = (Protein) f.nutrients.get(j);
 //						if (p.getQuantity() >= quant) {
-//							foodbynutrient.add(f);
-//							continue;
-//						}
-//					}
-//				}
-//			}
+//							
+//						
+//						
+//					
+//
+//		
 //
 //			if (nutrient.equals("carbohydrates")) {
 //				for (int j = 0; j < f.nutrients.size(); j++) {
