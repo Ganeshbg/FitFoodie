@@ -3,7 +3,7 @@ package io.fitfoodie.food;
 public class Restaurant {
 	private int id;
 	private String name;
-	private String address;
+	private Address address;
 	private double rating;
 	
 	public int getId() {
@@ -18,10 +18,10 @@ public class Restaurant {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getAddress() {
+	public Address getAddress() {
 		return address;
 	}
-	public void setAddress(String address) {
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 	public double getRating() {
@@ -31,7 +31,7 @@ public class Restaurant {
 		this.rating = rating;
 	}
 	
-	public Restaurant(int id, String name, String address, double rating) {
+	public Restaurant(int id, String name, Address address, double rating) {
 		super();
 		setId(id);
 		setName(name);
