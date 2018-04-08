@@ -4,15 +4,14 @@ import java.util.List;
 
 public class Meal implements Comparable<Food>{
 	private String Name;
-	private String Restaurant;
-	private double ratings;
+	private Restaurant Restaurant;
 	private int calories;
 	private double price;
 	public List<Nutrients> nutrients;
 	
 	
 	public int compareTo(Meal f) {
-		return this.Restaurant.compareTo(f.Restaurant);
+		return this.Restaurant.getName().compareTo(f.Restaurant.getName());
 	}
 	
 	public int getCalories()
@@ -52,31 +51,22 @@ public class Meal implements Comparable<Food>{
 		Name = name;
 	}
 	
-	public String getRestaurant() {
+	public Restaurant getRestaurant() {
 		return Restaurant;
 	}
 	
-	public void setRestaurant(String restaurant) {
+	public void setRestaurant(Restaurant restaurant) {
 		Restaurant = restaurant;
-	}
-	
-	public double getRatings() {
-		return ratings;
-	}
-	
-	public void setRatings(double ratings) {
-		this.ratings = ratings;
 	}
 	
 	public String getId()
 	{
 		return this.Name;
 	}
-	public Meal(String name, String restaurant, double ratings, int calories, double price, List<Nutrients> nutrients) {
+	public Meal(String name, Restaurant restaurant, int calories, double price, List<Nutrients> nutrients) {
 		super();
 		setName(name);
 		setRestaurant(restaurant);
-		setRatings(ratings);
 		setCalories(calories);
 		setPrice(price);
 		setNutrients(nutrients);

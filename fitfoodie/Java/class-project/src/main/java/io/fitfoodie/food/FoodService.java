@@ -10,13 +10,13 @@ import org.springframework.stereotype.Service;
 public class FoodService {
 
 	private List<Meal> foodlist = new ArrayList<>(Arrays.asList(
-			new Meal("Jamoon", "Kathmandu", 4.5, 410, 3.52,
+			new Meal("Jamoon", new Restaurant(1,"Kathmandu","Folsom",4.6), 410, 3.52,
 					new ArrayList<>(Arrays.asList(new Protein(1), new Carbohydrates(2), new Fat(3)))),
-			new Meal("Jamoon1", "Taj", 4.6, 410, 3.52,
+			new Meal("Masala Dosa", new Restaurant(1,"Masalas","Folsom",4.7), 420, 4.2,
 					new ArrayList<>(Arrays.asList(new Protein(2), new Carbohydrates(3), new Fat(4)))),
-			new Meal("Jamoon2", "Masalas", 4.7, 410, 3.52,
+			new Meal("Samosa", new Restaurant(1,"Taj","Folsom",4.5), 445, 6.2,
 					new ArrayList<>(Arrays.asList(new Protein(3), new Carbohydrates(4), new Fat(5)))),
-			new Meal("Jamoon2", "Masalas", 4.7, 410, 3.52,
+			new Meal("Biryani", new Restaurant(1,"Bawarchi","Folsom",4.2), 310, 7.2,
 					new ArrayList<>(Arrays.asList(new Protein(10), new Carbohydrates(3), new Fat(2))))));
 
 	public List<Meal> getAllMeal() {
