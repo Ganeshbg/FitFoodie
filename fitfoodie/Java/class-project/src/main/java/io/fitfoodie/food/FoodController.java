@@ -16,39 +16,39 @@ public class FoodController {
 	private FoodService foodservice;
 	
 	@RequestMapping("/food")
-	public List<Food> getAllFood()
+	public List<Meal> getAllMeal()
 	{
-		return foodservice.getAllFood();
+		return foodservice.getAllMeal();
 	}
 	
 	@RequestMapping("/food/{id}")
-	public Food getFood(@PathVariable String id)
+	public Meal getMeal(@PathVariable String id)
 	{
-		return foodservice.getFood(id);
+		return foodservice.getMeal(id);
 	}
 	
 	@RequestMapping(method=RequestMethod.POST, value="/food")
-	public void addFood(@RequestBody Food food)
+	public void addMeal(@RequestBody Meal meal)
 	{
-		foodservice.addFood(food);
+		foodservice.addMeal(meal);
 	}
 	
 	@RequestMapping(method=RequestMethod.PUT, value="/food/{id}")
-	public void updateFood(@RequestBody Food food, @PathVariable String id)
+	public void updateMeal(@RequestBody Meal meal, @PathVariable String id)
 	{
-		foodservice.updateFood(food, id);
+		foodservice.updateMeal(meal, id);
 	}
 	
 	@RequestMapping(method=RequestMethod.DELETE, value="/food/{id}")
-	public void deleteFood(@PathVariable String id)
+	public void deleteMeal(@PathVariable String id)
 	{
-		foodservice.deleteFood(id);
+		foodservice.deleteMeal(id);
 	}
 	
 	@RequestMapping("/food/{nutrient}/{quantity}")
-	public List<Food> getFoodByNutrient(@PathVariable String nutrient, @PathVariable String quantity)
+	public List<Meal> getMealByNutrient(@PathVariable String nutrient, @PathVariable String quantity)
 	{
-		return foodservice.getFoodByNutrient(nutrient, quantity);
+		return foodservice.getMealByNutrient(nutrient, quantity);
 	}
 	
 	@RequestMapping("/ping")
