@@ -1,11 +1,11 @@
 package io.fitfoodie.food;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+//import javax.persistence.Entity;
+//import javax.persistence.Id;
 
-@Entity
+//@Entity
 public class Area {
-	@Id
+	//@Id
 	private String zipCode;
 	private String name;
 	private String state;
