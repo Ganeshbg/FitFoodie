@@ -42,5 +42,13 @@ public class Area {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+
+	public Area(String zipCode, String name, String state, String country) {
+		super();
+		this.zipCode = zipCode;
+		this.name = name;
+		this.state = state;
+		this.country = country;
+	}
 	
 }

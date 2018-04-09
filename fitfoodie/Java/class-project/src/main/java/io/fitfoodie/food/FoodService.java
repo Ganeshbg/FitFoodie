@@ -10,13 +10,13 @@ import org.springframework.stereotype.Service;
 public class FoodService {
 
 	private List<Meal> foodlist = new ArrayList<>(Arrays.asList(
-			new Meal("Jamoon", new Restaurant(1,"Kathmandu",new Address("Folsom","Boulder","Colorado","USA",80302),4.6), 410, 3.52,
+			new Meal("Jamoon", new Restaurant(1,"Kathmandu",new Address("001","Colorado Ave", new Area("80303","Boulder","CO","USA")),4.6), 410, 3.52,
 					new ArrayList<>(Arrays.asList(new Protein(1), new Carbohydrates(2), new Fat(3)))),
-			new Meal("Masala Dosa", new Restaurant(1,"Masalas",new Address("Pensel","Boulder","Colorado","USA",80302),4.7), 420, 4.2,
+			new Meal("Masala Dosa", new Restaurant(1,"Masalas",new Address("002","Arapahoe Ave", new Area("80304","Boulder","CO","USA")),4.7), 420, 4.2,
 					new ArrayList<>(Arrays.asList(new Protein(2), new Carbohydrates(3), new Fat(4)))),
-			new Meal("Samosa", new Restaurant(1,"Taj",new Address("Broadway","Boulder","Colorado","USA",80302),4.5), 445, 6.2,
+			new Meal("Samosa", new Restaurant(1,"Taj",new Address("003","Arapahoe Ave", new Area("80305","Boulder","CO","USA")),4.5), 445, 6.2,
 					new ArrayList<>(Arrays.asList(new Protein(3), new Carbohydrates(4), new Fat(5)))),
-			new Meal("Biryani", new Restaurant(1,"Bawarchi",new Address("Perl","Boulder","Colorado","USA",80302),4.2), 310, 7.2,
+			new Meal("Biryani", new Restaurant(1,"Bawarchi",new Address("004","Arapahoe Ave", new Area("80305","Boulder","CO","USA")),4.2), 310, 7.2,
 					new ArrayList<>(Arrays.asList(new Protein(10), new Carbohydrates(3), new Fat(2))))));
 
 	public List<Meal> getAllMeal() {
