@@ -1,11 +1,17 @@
 package io.fitfoodie.food;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 //import javax.persistence.Entity;
 //import javax.persistence.Id;
 
 //@Entity
 public class Area {
 	//@Id
+	
+	@Autowired
+	private AreaService areaService;
+	
 	private String zipCode;
 	private String name;
 	private String state;
@@ -42,9 +48,14 @@ public class Area {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	
+	public Area() {
+		
+	}
 
 	public Area(String zipCode, String name, String state, String country) {
 		super();
+		
 		this.zipCode = zipCode;
 		this.name = name;
 		this.state = state;
