@@ -31,9 +31,6 @@ public class Restaurant {
 		this.rating = rating;
 	}
 	
-	public Restaurant() {
-	}
-	
 	public Restaurant(int id, String name, Address address, double rating) {
 		super();
 		setId(id);

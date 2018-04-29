@@ -9,14 +9,20 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProfileService {
 	
-	private List<Nutrients> profile = new ArrayList<>(Arrays.asList(
+	/*private List<Nutrient> profile = new ArrayList<>(Arrays.asList(
 			new Protein(5),
-			new Carbohydrates(2),
 			new Fat(2)
 			));
+	*/
 	
-	public List<Nutrients> getCustomerProfile(){
-		return profile;
+	/*
+	Customer cust1=new Customer();
+	public List<Nutrient> getCustomerProfile(){
+		return cust1.getProfile();
 	}
 
+	public void addNutrient(Nutrient nutrient) {
+		cust1.addNutrient(nutrient);
+	}
+*/
 }

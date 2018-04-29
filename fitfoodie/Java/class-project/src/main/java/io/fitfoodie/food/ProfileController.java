@@ -12,11 +12,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProfileController {
 	@Autowired
 	private ProfileService profileservice;
-	
-	@RequestMapping("/profile")
-	public List<Nutrients> getCustomerProfile(){
+	/*
+	@RequestMapping("/customer/profile")
+	public List<Nutrient> getCustomerProfile(){
 		return profileservice.getCustomerProfile();
 		
 	}
-
+	
+	@RequestMapping(method=RequestMethod.POST, value="/profile")
+	public void addNutrient(@RequestBody Nutrient nutrient)
+	{
+		profileservice.addNutrient(nutrient);
+	}
+*/
 }

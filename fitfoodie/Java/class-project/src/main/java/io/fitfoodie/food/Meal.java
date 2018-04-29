@@ -2,7 +2,7 @@ package io.fitfoodie.food;
 
 import java.util.List;
 
-public class Meal implements Comparable<Meal>{
+public class Meal implements Comparable<Food>{
 	private String Name;
 	private Restaurant Restaurant;
 	private int calories;
@@ -75,5 +75,10 @@ public class Meal implements Comparable<Meal>{
 	
 	public Meal() {
 		
+	}
+	@Override
+	public int compareTo(Food o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
