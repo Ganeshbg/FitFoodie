@@ -16,7 +16,7 @@ public class Customer extends RegisteredUser implements SearchableByProfile{
 	
 	public Customer(String name, ArrayList nutrients, String id) {
 		super.setName(name);
-		Profile p=new CustomerProfile();
+		Profile p=new Profile();
 		p.setId(id);
 		p.setNutrients(nutrients);
 		this.profiles.add(p);
