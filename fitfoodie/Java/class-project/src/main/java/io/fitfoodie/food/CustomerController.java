@@ -35,5 +35,9 @@ public class CustomerController {
 		//customerService.addNutrient(nutrient);
 	}
 
-	
+	@RequestMapping("/customer/{id}/{profile}")
+	public List<Meal> searchByProfile(@PathVariable String id, @PathVariable String  profile)
+	{
+		return customerService.searchByProfile(id,profile);
+	}
 }

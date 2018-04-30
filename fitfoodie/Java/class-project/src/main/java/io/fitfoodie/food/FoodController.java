@@ -56,10 +56,5 @@ public class FoodController {
 	{
 		return "What's up";
 	}
-	@RequestMapping("/test")
-	public String test()
-	{
-		return "testingp";
-	}
 }
 

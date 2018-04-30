@@ -36,6 +36,50 @@ public class CustomerService {
 		}
 	}
 
+	public List<Meal> searchByProfile(String id, String profile)
+	{
+		FoodService foodservice = new FoodService();
+		//@SuppressWarnings("null")
+		List<Meal> foodlist = foodservice.getAllMeal();
+		List<Meal> return_meal = new ArrayList<>();
+		for(@SuppressWarnings("unused") Customer customer: customerlist)
+		{
+			if(customer.getName().equals(id))
+			{
+				List<Profile> customerprofiles = customer.getProfile();
+				for(Meal meal: foodlist)
+				{
+					List<Nutrients> nutrients = meal.getNutrients();
+					int count = 0;
+					for(Nutrients nutrient: nutrients)
+					{
+						for(Profile cprofile: customerprofiles)
+						{
+							if(cprofile.getId().equals(profile))
+							{
+								List<Nutrients> cnutrients = cprofile.getNutrients();
+								for(Nutrients nut: cnutrients)
+								{
+									if(nut.getName().equals(nutrient.getName()))
+									{
+										if(nutrient.getQuantity()>nut.getQuantity())
+										{
+											count = count + 1;
+											if(count == 3)
+											{
+												return_meal.add(meal);
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		return return_meal;
+	}
 	
 	
 }

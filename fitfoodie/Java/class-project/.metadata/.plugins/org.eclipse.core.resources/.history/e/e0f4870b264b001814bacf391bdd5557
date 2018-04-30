@@ -1,0 +1,8 @@
+package io.fitfoodie.food;
+import java.util.*;
+
+public abstract class Payment {
+	public boolean paymentStatus=false;
+	public abstract boolean processPayment();
+	public abstract List<String> getName();
+}

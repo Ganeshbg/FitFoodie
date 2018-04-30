@@ -1,0 +1,29 @@
+package io.fitfoodie.food;
+
+public class Paytm extends Payment{
+	private Card card;
+	private String name;
+	
+	public Card getCard() {
+		return card;
+	}
+
+	public void setCard(Card card) {
+		this.card = card;
+	}
+
+	public boolean processPayment() {
+		paymentStatus = true;
+		return paymentStatus;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+	
+	public String setName(String name)
+	{
+		name = name;
+	}
+}

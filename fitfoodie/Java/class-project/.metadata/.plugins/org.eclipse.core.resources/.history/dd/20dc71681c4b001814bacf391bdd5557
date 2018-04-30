@@ -1,0 +1,24 @@
+package io.fitfoodie.food;
+
+import java.util.ArrayList;
+import java.util.*;
+
+
+public class PaymentService {
+	
+	private List<Payment> paymentlist = new ArrayList<>(Arrays.asList(
+			new COD(false,"Cash on Delivery"),
+			new Paytm(new Card("Ganesh", "1233445", "July 7", "hjsa")))
+			);
+	
+	
+	public List<Payment> getAllPayments() {
+		return paymentlist;
+	}
+	
+	public void addPaymentType(Payment payment)
+	{
+		paymentlist.add(payment);
+	}
+
+}

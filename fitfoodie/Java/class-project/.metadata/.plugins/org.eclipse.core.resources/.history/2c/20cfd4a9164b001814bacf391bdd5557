@@ -1,0 +1,14 @@
+package io.fitfoodie.food;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PaymentService {
+	
+	private List<Payment> paymentlist = new ArrayList<Payment>();
+	
+	public List<Payment> getAllPayments() {
+		return paymentlist;
+	}
+
+}

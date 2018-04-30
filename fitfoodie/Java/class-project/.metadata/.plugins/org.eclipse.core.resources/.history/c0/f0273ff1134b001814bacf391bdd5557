@@ -1,0 +1,5 @@
+package io.fitfoodie.food;
+
+public class PaymentService {
+
+}

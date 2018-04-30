@@ -1,0 +1,40 @@
+package io.fitfoodie.food;
+
+public class COD extends Payment{
+
+	private boolean authorization;
+	private String name;
+	
+	public COD(boolean authorization, String name) {
+		super();
+		this.authorization = authorization;
+		this.name = name;
+	}
+
+
+	public boolean isAuthorization() {
+		return authorization;
+	}
+
+
+	public void setAuthorization(boolean authorization) {
+		this.authorization = authorization;
+	}
+
+
+	public boolean processPayment() {
+		paymentStatus = true;
+		return paymentStatus;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+}
